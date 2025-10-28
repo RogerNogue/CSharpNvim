@@ -1,0 +1,13 @@
+- para crear el proyecto he tenido que hacer en consola: 
+dotnet new sln -n PruebaTest
+dotnet new console -n PruebaApp
+dotnet sln add PruebaApp/PruebaApp.csproj
+
+- para poner las pruebas:
+dotnet new xunit -n PruebaApp.Tests
+dotnet add PruebaApp.Tests/PruebaApp.Tests.csproj reference PruebaApp/PruebaApp.csproj
+dotnet sln add PruebaApp.Tests/PruebaApp.Tests.csproj
+
+- buildear y ejecutar tests:
+  dotnet build
+  dotnet test
