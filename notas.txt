@@ -11,3 +11,4 @@ dotnet sln add PruebaApp.Tests/PruebaApp.Tests.csproj
 - buildear y ejecutar tests:
   dotnet build
   dotnet test
+  (ir a la carpeta del proyecto de codigo) dotnet run
